@@ -11,3 +11,13 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
+
+### Deploy contract
+```
+npx hardhat run scripts/deploy.js --network arbitrum_sepolia
+```
+
+### Verify contract
+```
+npx hardhat verify --constructor-args arguments.js <your-contract-address> --network arbitrum_sepolia
+```
